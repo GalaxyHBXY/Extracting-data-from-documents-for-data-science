@@ -1,45 +1,49 @@
 # CS31 - Extracting  data from documents for data science
 
-#### 1. Introduction
+## Introduction
 
 This project aims to extract valuable information from the old scanned documents. 
 
-#### 2. Installation
+## Keywords
 
-- Python3 environment
-- Dependency installation: `pip3 install requirements.txt`
+- OCR
 
+- Template matching
+- Linear regression 
 
+## Installation
 
+- `Python3` environment
+- Dependency installation: 
+  - `pip3 install -r requirements.txt`
+  - `conda install --yes --file requirements.txt`
 
+## Quick Start
 
-#### 3. Methodology
+- demo program - `python3 main_script.py`
 
-1. input a pdf file
+## Methodology
 
-2. convert it to a set of image files (a pdf file can have multiple pages), and save them to a temporary directory (`[root working directory]/tmp/`)
+0. Given a set of pdf files as input
 
-   1. time consuming - needs to find a trade-off between the efficiency and the image quality
+1. Convert them to a set of image files (note: a pdf file can have multiple pages), and save them to a temporary directory (e.g. `[root working directory]/tmp/`)
 
-3. iterate through the `.../tmp/` directory with the **template matching** script, the matched images are renamed and saved in `.../selected` directory.
+2. Iterate through the temporary directory with the **template matching** script (i.e. filter_util.py). The matched images will be renamed and saved in `.../selected` directory.
 
-4. clean `.../tmp/` and repeat 1-3.
+3. Clear `.../tmp/` and repeat 1-3.
 
-5. pre-define the position of the critical areas by the labelling tool
+4. Pre-define the position of the critical areas by the labelling tool
 
-   1. `json_util.py`
+   - Please refer to the `Labeling` section for more information.
 
-   2. `PPOCRLabel --kie True`
+5. Running the OCR program on each image in `.../selected/` that retrieves the text in the certain area (nearest valid block).
 
-6. Running the OCR program on each image in `.../selected/` that retrieves the text in the certain area (nearest valid block).
-
-7. save the outputs into a JSON file for further analysis
+6. Save the outputs into a JSON file for further analysis
 
    1. ```json
       // sample format
       {
           name: "xxx",
-          estate_of: "xxx",
           issue_date: "dd-mm-yyyy",
           date_of_death: "dd-mm-yyyy",
           total_tax_payment: 123,
@@ -55,6 +59,37 @@ This project aims to extract valuable information from the old scanned documents
       }  
       ```
 
+## Labeling
+
+In order to predict the position of the critical areas, we use the idea of linear regression to . 
+
+To label the critical areas, we can use `PPOCRLabel`, the labeling software in PaddleOCR that can easily categorize the critical areas with given names.
+
+1. Run  `PPOCRLabel --kie True`
+2. Manually label the training set
+   1. `PPOCRLabel --kie True`
+   2. `Click File -> Open Dir`
+   3. The software will automatically recognise the files in the directory
+   4. right-click the area you want to label, choose `Change Box Key`
+      1. ![step 4](screenshots/step4.png)
+   5. Change the label
+      1. ![step 5](screenshots/step5.png)
+3. Use linear regression to construct a function that represents the maximum likelihood of the position of the critical areas.
+4. Match the OCR result with the output of the function to retrieve the position of the critical areas.
+5. Extract the text and save it in a python dictionary
+
+## Template Matching
+
+We use the template matching technology to detect if a smaller pattern occurs in the target input images. This step can significantly improve the efficiency as template matching is less costly than OCR.
+
+In the `source` directory, we provided a set of logo that can be used to match the files in different time.
+
+- i.e. 2005-2009 ver.: ![2005](source/logo_2005.png)
+
 #### Reference
 
 - PaddleOCR GitHub Repo: https://github.com/PaddlePaddle/PaddleOCR
+- Template matching, OpenCV: https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html#template-matching-with-multiple-objects
+
+
+
