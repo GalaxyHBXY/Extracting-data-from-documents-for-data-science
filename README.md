@@ -24,11 +24,13 @@ This project aims to extract valuable information from the old scanned documents
 
 ## Methodology
 
+![flow](screenshots/flow.png)
+
 0. Given a set of pdf files as input
 
 1. Convert them to a set of image files (note: a pdf file can have multiple pages), and save them to a temporary directory (e.g. `[root working directory]/tmp/`)
 
-2. Iterate through the temporary directory with the **template matching** script (i.e. filter_util.py). The matched images will be renamed and saved in `.../selected` directory.
+2. Iterate through the temporary directory with the **template matching** script (i.e. filter_util.py). The matched images will be renamed and saved in a directory (default in  `selected/` ).
 
 3. Clear `.../tmp/` and repeat 1-3.
 
@@ -36,7 +38,7 @@ This project aims to extract valuable information from the old scanned documents
 
    - Please refer to the `Labeling` section for more information.
 
-5. Running the OCR program on each image in `.../selected/` that retrieves the text in the certain area (nearest valid block).
+5. Running the OCR program on each image in the directory specified in `2` that retrieves the text in the certain area (nearest valid block).
 
 6. Save the outputs into a JSON file for further analysis
 
@@ -59,9 +61,11 @@ This project aims to extract valuable information from the old scanned documents
       }  
       ```
 
-## Labeling
+## Finding Critical Areas
 
-In order to predict the position of the critical areas, we use the idea of linear regression to . 
+In order to predict the position of the critical areas, we use the idea of linear regression to find the area that has the maximum likelihood of being the target area. 
+
+## Labeling
 
 To label the critical areas, we can use `PPOCRLabel`, the labeling software in PaddleOCR that can easily categorize the critical areas with given names.
 
@@ -77,6 +81,8 @@ To label the critical areas, we can use `PPOCRLabel`, the labeling software in P
 3. Use linear regression to construct a function that represents the maximum likelihood of the position of the critical areas.
 4. Match the OCR result with the output of the function to retrieve the position of the critical areas.
 5. Extract the text and save it in a python dictionary
+
+Note that the data in `selected/` directory is used as a training set to train the linear regression model.
 
 ## Template Matching
 
