@@ -90,7 +90,7 @@ We use the template matching technology to detect if a smaller pattern occurs in
 
 In the `source` directory, we provided a set of logo that can be used to match the files in different time.
 
-- i.e. 2005-2009 ver.: ![2005](source/logo_2005.png)
+- e.g. 2005-2009 ver.: ![2005](source/logo_2005.png)
 
 #### Reference
 
