@@ -32,7 +32,7 @@ This project aims to extract valuable information from the old scanned documents
 
 2. Iterate through the temporary directory with the **template matching** script (i.e. filter_util.py). The matched images will be renamed and saved in a directory (default in  `selected/` ).
 
-3. Clear `.../tmp/` and repeat 1-3.
+3. Clear the temporary directory, then repeat 1-3.
 
 4. Pre-define the position of the critical areas by the labelling tool
 
@@ -91,6 +91,36 @@ We use the template matching technology to detect if a smaller pattern occurs in
 In the `source` directory, we provided a set of logo that can be used to match the files in different time.
 
 - e.g. 2005-2009 ver.: ![2005](source/logo_2005.png)
+
+## Results:
+
+- Our filtering model successfully  matched 100% of the 2005-2009  version documents and 90% of the  2010-onwards version.
+
+- The accuracy rate of successfully  detecting and extracting text is  over 95%.
+
+  ```bash
+  # our method
+  
+  real    1m13.932s
+  user    0m0.000s
+  sys     0m0.000s
+  
+  # pure OCR method
+  
+  real    6m26.755s
+  user    0m0.000s
+  sys     0m0.015s
+  
+  # approximately 5.2 times faster
+  ```
+
+## Future work
+
+- This project has solved the problems of extracting printed text from a certain template. 
+- However, the performance on the **hand-written text** is not very good. It's mainly because the randomness of the human writing habits. The critical area of the hand-written text is also relatively more difficult to detect. 
+- The template matching method may not be useful for all of the document as they may contain the same logo. A possible approach might be using the **title text** as the template.
+
+
 
 #### Reference
 

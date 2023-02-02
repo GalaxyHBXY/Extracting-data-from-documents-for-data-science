@@ -17,5 +17,3 @@ def pdf_to_img(file):
     for page in pages:
         page.save(f'tmp/{os.path.basename(file)}_{i}.jpg', 'JPEG')
         i += 1
-
-# pdf_to_img("source/sample3.pdf")

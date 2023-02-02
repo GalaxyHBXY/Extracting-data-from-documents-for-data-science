@@ -1,7 +1,7 @@
 import pdf_to_img
 import os
 from filter_util import filter
-from paddleocr_util import retrieve_critical_area, find_candidates, retrieve_info
+from ocr_util import retrieve_critical_area, find_candidates, retrieve_info
 from crit_json_util import get_crit_section
 
 def step_0():
@@ -36,10 +36,10 @@ def step_3(target_path, critical_area) -> list:
 if __name__ == "__main__":
 
     '''
-    0. generate the critical area file
+    0. Generate the critical area file
     (only needs to be run once)
     '''
-    # step_0()
+    step_0()
 
     ''' 
     1. pdf to image
@@ -58,6 +58,10 @@ if __name__ == "__main__":
     return a dict that contains all the chosen information 
     '''
     result = step_3('sample_output/', "critical_area.txt")
+
+    '''
+    Output results
+    '''
     print(result)
 
 

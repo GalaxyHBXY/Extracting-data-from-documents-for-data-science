@@ -49,9 +49,7 @@ def filter(input_path="tmp/", output_path="selected/", template_path="source/log
                 shutil.copy(file_path, output_path)
 
 
-    # clear the images in input_path
+    # clear the temporary images in input_path
     for _,_,files in os.walk(input_path):
         for file in files:
             os.remove(input_path + file)
-
-# filter()
