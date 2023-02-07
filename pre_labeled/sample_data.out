@@ -1,0 +1,346 @@
+{
+    "aka": "AKA",
+    "date-death": "01/08/2005",
+    "date-filing": "07/08/2005",
+    "estate-type": "PROBATE",
+    "file-number": "2005-00739",
+    "name": "AARON LENORE MARKOWITZ",
+    "select": "CenPH_SCHDTA1_SEL.0",
+    "subinfo": {
+        "Certification-Filed": "10/26/2005",
+        "Certification-Needed By": "10/17/2005",
+        "Date of Death": "01/08/2005",
+        "Decedent": "MARKOWITZ LENORE",
+        "Estate Type": "PROBATE",
+        "File-0": "35",
+        "File-1": "2005-00739",
+        "Filing Date": "07/08/2005",
+        "Letters Granted": "07/07/2005",
+        "Personal Representative": "ADMINISTRATOR",
+        "Report To State": "07/07/2005",
+        "Residence Code": "012",
+        "Residence Name": "DICKSON CITY",
+        "State Appraisement Date": "00/00/0000",
+        "Status Report-Filed": "05/30/2008",
+        "Status Report-Needed By": "01/08/2007",
+        "attorney": [
+            {
+                "city": "SCRANTON PA  18503",
+                "name": "MCGEE JOHN J",
+                "phone": "570-342-4944",
+                "street": "400 SPRUCE ST STE 300"
+            }
+        ],
+        "sub-aka": {
+            "Decedent": "MARKOWITZ LENORE",
+            "akas": [
+                {
+                    "name": "AARON LENORE MARKOWITZ"
+                },
+                {}
+            ],
+            "file-0": "35",
+            "file-1": "2005-00739"
+        },
+        "sub-dockets": {
+            "Decedent": "MARKOWITZ LENORE",
+            "dockets": [
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "011",
+                        "book/volume": " 589.0",
+                        "date": "07/02/2008",
+                        "description": [
+                            "REV 1547 NOTICE INH TAX APPRAISEMENT",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "JJG",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": "2355.00",
+                        "pdf": "part0/data-post95.part0document-8.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2673.PDF",
+                        "standard-code": "00043"
+                    },
+                    "date": "07/02/2008",
+                    "entry": "REV 1547 NOTICE INH TAX APPRAISEMENT",
+                    "select": "CenPH_SCHDTA3_SEL.0"
+                },
+                {
+                    "entry": "Docket: JJG  Book: 589.0  Page: 2355.00"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "010",
+                        "book/volume": " 587.0",
+                        "date": "05/30/2008",
+                        "description": [
+                            "STATUS REPORT 6.12",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "KM",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": "  35.00",
+                        "pdf": "part0/data-post95.part0document-10.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2675.PDF",
+                        "standard-code": "00015"
+                    },
+                    "date": "05/30/2008",
+                    "entry": "STATUS REPORT 6.12",
+                    "select": "CenPH_SCHDTA3_SEL.2"
+                },
+                {
+                    "entry": "Docket: KM  Book: 587.0  Page: 35.00"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "009",
+                        "book/volume": " 584.0",
+                        "date": "03/19/2008",
+                        "description": [
+                            "INHERITANCE TAX RETURN",
+                            "PAGE 1111-1120",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "JJG",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": "1111.00",
+                        "pdf": "part0/data-post95.part0document-12.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2677.PDF",
+                        "standard-code": "00012"
+                    },
+                    "date": "03/19/2008",
+                    "entry": "INHERITANCE TAX RETURN",
+                    "select": "CenPH_SCHDTA3_SEL.4"
+                },
+                {
+                    "entry": "PAGE 1111-1120"
+                },
+                {
+                    "entry": "Docket: JJG  Book: 584.0  Page: 1111.00"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "008",
+                        "book/volume": " ",
+                        "date": "03/19/2008",
+                        "description": [
+                            "INHERITANCE TAX PYMT",
+                            "PAID - 20,971.46  ACN - 101  RECEIPT - LC009609",
+                            "MCGEE JOHN J",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": " ",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": " ",
+                        "pdf": "part0/data-post95.part0document-14.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2678.PDF",
+                        "standard-code": "00038"
+                    },
+                    "date": "03/19/2008",
+                    "entry": "INHERITANCE TAX PYMT",
+                    "select": "CenPH_SCHDTA3_SEL.7"
+                },
+                {
+                    "entry": "PAID - 20,971.46  ACN - 101  RECEIPT - LC009609"
+                },
+                {
+                    "entry": "MCGEE JOHN J"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "007",
+                        "book/volume": " 584.0",
+                        "date": "03/14/2008",
+                        "description": [
+                            "PETITION FOR LETTERS TESTAMENTARY & SUPPORTING DOCUMENTS",
+                            "724-726",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "KM",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": " 724.00",
+                        "pdf": "part0/data-post95.part0document-16.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2681.PDF",
+                        "standard-code": "00205"
+                    },
+                    "date": "03/14/2008",
+                    "entry": "PETITION FOR LETTERS TESTAMENTARY & SUPPORTING DOCUMENTS",
+                    "select": "CenPH_SCHDTA3_SEL.10"
+                },
+                {
+                    "entry": "724-726"
+                },
+                {
+                    "entry": "Docket: KM  Book: 584.0  Page: 724.00"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "006",
+                        "book/volume": " 572.0",
+                        "date": "08/06/2007",
+                        "description": [
+                            "DECREE/MOTION TO WITHDRAW AND ENTRY OF APPEARANCE",
+                            "PAGES 2598/2600",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "JMP",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": "2598.00",
+                        "pdf": "part0/data-post95.part0document-18.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2683.PDF",
+                        "standard-code": "00081"
+                    },
+                    "date": "08/06/2007",
+                    "entry": "DECREE/MOTION TO WITHDRAW AND ENTRY OF APPEARANCE",
+                    "select": "CenPH_SCHDTA3_SEL.13"
+                },
+                {
+                    "entry": "PAGES 2598/2600"
+                },
+                {
+                    "entry": "Docket: JMP  Book: 572.0  Page: 2598.00"
+                },
+                {
+                    "content": {
+                        "Decedent": "MARKOWITZ LENORE",
+                        "ID Numner": "005",
+                        "book/volume": " ",
+                        "date": "08/14/2006",
+                        "description": [
+                            "*****    *****     *****     *****     *****     *****",
+                            "DOCUMENTS FILED PREVIOUS TO THIS DATE ARE IMAGED AS ONE DOCKET",
+                            "    *****    *****     *****     *****     *****     *****",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " ",
+                            " "
+                        ],
+                        "docket": "FMK",
+                        "file-0": "35",
+                        "file-1": "2005-00739",
+                        "page": " ",
+                        "pdf": "part0/data-post95.part0document-20.pdf",
+                        "src": "http://www.ic-access.com:8300/OPTICAL/LPA/PDF2684.PDF",
+                        "standard-code": "00196"
+                    },
+                    "date": "08/14/2006",
+                    "entry": "*****    *****     *****     *****     *****     *****",
+                    "select": "CenPH_SCHDTA3_SEL.16"
+                },
+                {},
+                {
+                    "entry": "DOCUMENTS FILED PREVIOUS TO THIS DATE ARE IMAGED AS ONE DOCKET"
+                },
+                {
+                    "entry": "    *****    *****     *****     *****     *****     *****"
+                },
+                {
+                    "entry": "Docket: FMK  Book:  Page:"
+                },
+                {
+                    "date": "10/26/2005",
+                    "entry": "CERTIFICATION OF NOTICE UNDER RULE 5.6(A)"
+                },
+                {
+                    "entry": "Docket: KLK  Book: 532.0  Page: 1004.00"
+                },
+                {
+                    "date": "07/07/2005",
+                    "entry": "CERTIFICATE OF DEATH"
+                },
+                {
+                    "entry": "Docket: JJG  Book: 525.0  Page: 233.00"
+                },
+                {
+                    "date": "07/07/2005",
+                    "entry": "OATH OF PERSONAL REPRESENTATIVE / GRANT OF LETTERS"
+                },
+                {
+                    "entry": "Docket: JJG  Book: 525.0  Page: 232.00"
+                },
+                {
+                    "date": "07/07/2005",
+                    "entry": "PETITION FOR GRANT OF LETTERS ADMINISTRATION"
+                },
+                {
+                    "entry": "Docket: JJG  Book: 525.0  Page: 231.00"
+                },
+                {}
+            ],
+            "file-0": "35",
+            "file-1": "2005-00739"
+        },
+        "sub-personal-rep": {
+            "Decedent": "MARKOWITZ LENORE",
+            "File-0": "35",
+            "File-1": "2005-00739",
+            "addresses": [
+                {
+                    "city": "DICKSON CITY PA  18519",
+                    "name": "MARKOWITZ SID",
+                    "phone number": "570-489-7630",
+                    "street": "811 JACKSON ST"
+                },
+                {}
+            ]
+        }
+    }
+}

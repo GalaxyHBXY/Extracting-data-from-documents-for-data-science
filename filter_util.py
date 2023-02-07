@@ -24,7 +24,7 @@ def search_returnPoint(img,template,template_size):
         return None,None,None
     return img,point[0]+ template_size[1] /2,point[1]
 
-def filter(input_path="tmp/", output_path="selected/", template_path="source/logo_2005.png"):
+def filter(input_path="tmp", output_path="selected", template_path="source/logo_2005.png"):
 
     scale = 1
     template = cv2.imread(template_path) #logo template
@@ -40,7 +40,7 @@ def filter(input_path="tmp/", output_path="selected/", template_path="source/log
 
     for _,_,files in os.walk(input_path):
         for i in files:
-            file_path = input_path + i
+            file_path = os.path.join(input_path, i)
             img = cv2.imread(file_path)
             img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
             img,x_,y_ = search_returnPoint(img,template,template_size)
@@ -52,4 +52,4 @@ def filter(input_path="tmp/", output_path="selected/", template_path="source/log
     # clear the temporary images in input_path
     for _,_,files in os.walk(input_path):
         for file in files:
-            os.remove(input_path + file)
+            os.remove(os.path.join(input_path, file))

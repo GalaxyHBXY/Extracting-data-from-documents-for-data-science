@@ -6,14 +6,16 @@ import os
 def pdf_to_img(file):
 
     # create folder
-    path = "tmp"
-    folder = os.path.exists(path)
+    super_path = "tmp"
+    folder = os.path.exists(super_path)
 
     if not folder:                   
-        os.makedirs(path)           
+        os.makedirs(super_path)           
 
     pages = convert_from_path(file, 200)
     i = 0
     for page in pages:
-        page.save(f'tmp/{os.path.basename(file)}_{i}.jpg', 'JPEG')
+        base_path = os.path.basename(file) + f"_{i}.jpg"
+        temp_path = os.path.join(super_path, base_path)
+        page.save(temp_path, 'JPEG')
         i += 1

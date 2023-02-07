@@ -76,12 +76,3 @@ def find_candidates(critical_area:dict, raw_data:list) -> dict:
     return result_dict
 
 
-
-
-if __name__ == "__main__":
-    with open('raw_data.txt') as f:
-        raw_data = ast.literal_eval(f.read())
-    # lst = retrieve_info("source/sample4.jpg")
-    critical_area = retrieve_critical_area("critical_area.txt")
-    find_candidates(critical_area, raw_data)
-
