@@ -92,6 +92,12 @@ In the `source` directory, we provided a set of logo that can be used to match t
 
 - e.g. 2005-2009 ver.: ![2005](source/logo_2005.png)
 
+## Get Documents From Pre-labeled Output
+
+There is a `.out` file from previous work that contains the metadata of the database, including `date` , `date_of_death`, `name` , etc. The metadata here can be used as training sets or cross-validation sets.
+
+To extract the target documents from the database, please run `python3 read_metadata.py`. 
+
 ## Results:
 
 - Our filtering model successfully  matched 100% of the 2005-2009  version documents and 90% of the  2010-onwards version.
@@ -125,7 +131,12 @@ In the `source` directory, we provided a set of logo that can be used to match t
 #### Reference
 
 - PaddleOCR GitHub Repo: https://github.com/PaddlePaddle/PaddleOCR
+
+- PaddleOCR paper: https://arxiv.org/abs/2009.09941
+
 - Template matching, OpenCV: https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html#template-matching-with-multiple-objects
+
+  
 
 
 
